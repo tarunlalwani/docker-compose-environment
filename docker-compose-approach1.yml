@@ -1,0 +1,7 @@
+version: '2'
+services:
+  demo:
+    image: centos:7.2.1511
+    command: sh -c '/bin/echo "My name is $$NAME" && sleep 2000'
+    env_file:
+      - ./env.sh
